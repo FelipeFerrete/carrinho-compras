@@ -3,9 +3,9 @@
     //add carrinho
     //atualizar valor total
 
-    let totalGeral =0;
-    document.getElementById('lista-produtos').innerHTML = '';
-    document.getElementById('valor-total').textContent = 'R$ 0'
+    let totalGeral;
+    limpar();
+
     
 function adicionar(){
     let produto = document.getElementById('produto').value;
@@ -30,5 +30,8 @@ function adicionar(){
 
 
 function limpar(){
+    totalGeral =0;
+    document.getElementById('lista-produtos').innerHTML = '';
+    document.getElementById('valor-total').textContent = 'R$ 0'
 
 }
